@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en-GB'>
+<head>
+  
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>Youtube Free Views</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+
+
+</head>
+<body class='item-view version-1-3-3 variant-indie_light'>
+
+<div class='clearboth'></div>
+<div class='blog-name container'>
+<div class='container section' id='header' name='Header'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget'>
+<div>
+<h1>
+<a href='#'>
+Free Youtube Views 
+</a>
+</h1>
+</div>
+<p>
+</p>
+</div>
+</div></div>
+<nav role='navigation'>
+<div class='clearboth no-items section' id='page_list_top' name='Page list (top)'>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div>
+<div class='vertical-ad-container no-items section' id='ads' name='Ads'>
+</div>
+<main class='centered-bottom' id='main' role='main' tabindex='-1'>
+<div class='main section' id='page_body' name='Page body'>
+<div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post'>
+
+<a name='1662131317992794052'></a>
+<h3 class='post-title entry-title'>
+
+</h3>
+<div class='post-share-buttons post-share-buttons-top'>
+<div class='byline post-share-buttons goog-inline-block'>
+
+
+
+</div>
+</div>
+</div>
+
+
+<p>&nbsp;<span style="font-size: large;">Link video</span></p>
+<table>
+  <tr>
+    <td>
+    </td>
+    <td><input id="urlvideo" value="" /><p>&nbsp;<span style="font-size: x-large;">views</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td><input id="nbrvideo" value="3" />
+    </td>
+  </tr>
+  <tr>
+    <td> <button onclick="play();"><p>&nbsp;<span style="font-size: large;">Play</span></p></button>  </td>
+  </tr>
+</table>
+
+
+
+<div id="player">
+<div class="videoContainer hide-for-small-only" id="player1"></div>
+
+    <script>
+      function play() { 
+	  var urlvid, fields, vid, vid1, list;
+	  	 urlvid = document.getElementById("urlvideo").value;
+		if(urlvid.includes("youtu.be")){
+		 vid = list = urlvid.split("/")[3];
+		}
+		else if(urlvid.includes("&list=")){
+		 fields = urlvid.split('?v=')[1];
+		 vid = fields.split('&')[0];
+		 list = fields.split('&list=')[1].split('&')[0];
+		} else {
+		 fields = urlvid.split('?v=')[1];
+		 vid = fields.split('&')[0];
+		 list = vid;
+		}
+		
+	  if(vid != ''){
+
+        urlvid = "https://www.youtube.com/embed/"+vid;
+
+			var n = document.getElementById("nbrvideo").value;
+
+		for(var i=1;i<=n;i++){
+		
+			var iframe = document.createElement('iframe');			
+			iframe.src = urlvid;
+			iframe.style.width = "256px";//256px 400px
+			iframe.style.height = "144px";//144px 120px
+			document.getElementById('player').appendChild(iframe);
+
+			}		
+        
+        
+vid1 = "https://youtube.com/playlist?list=PL_WYXVD6-zfaPVDkkrJRRs9IkRt4JQOto&playnext=1&index="+r+"&autoplay=1&mute=1&loop=1&rel=0&vq=tiny";
+			var iframe1 = document.createElement('iframe');
+			iframe1.src = vid1;
+			iframe1.style.width = "256px";//96px 256px
+			iframe1.style.height = "144px";//72px 144px
+			iframe1.style.border = "1px solid red";//dashed solid
+			iframe1.setAttribute('allowFullScreen', '');
+			iframe1.setAttribute('controls', 'none');
+			iframe1.setAttribute('class', 'overlay');
+			document.getElementById('player1').appendChild(iframe1);
+
+	  }	  
+	}
+    </script>
+	
+	</div>
+</div>
+
+</article>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
