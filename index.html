@@ -6,17 +6,71 @@
 <title>Youtube Free Views</title>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 
+<style>
+body{
+	background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+
+button {
+	position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #f5b26f;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #f5b26f;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #f5b26f;
+	font-family: sans-serif;
+	font-weight: 600;
+	position: relative;
+	left:110px;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #f5b26f;
+  font-family: sans-serif;
+  font-weight:600;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.adjustlinkvideo{
+	position: relative;
+}
+
+.input{
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	border:none;
+	position: relative;
+	left: -70px;
+}
+</style>
 
 </head>
-<body class='item-view version-1-3-3 variant-indie_light'>
+<body>
 
 <div class='clearboth'></div>
-<div class='blog-name container'>
+<div class='blog-name container' style="text-align: center;">
 <div class='container section' id='header' name='Header'><div class='widget Header' data-version='2' id='Header1'>
 <div class='header-widget'>
 <div>
 <h1>
-<a href='#'>
+<a href='#' style="text-decoration: none;font-family: sans-serif;font-weight: 800;font-size: 48px;color: white;">
 Free Youtube Views 
 </a>
 </h1>
@@ -56,26 +110,27 @@ Free Youtube Views
 </div>
 </div>
 
-
-<p>&nbsp;<span style="font-size: large;">Link video</span></p>
+<div style="display: flex; justify-content: center;align-items: center;flex-direction: column;">
+<p class="adjustlinkvideo" style="color: white;font-family: sans-serif;font-weight: 800;">&nbsp;<span style="font-size: large;">Link video</span></p>
 <table>
   <tr>
     <td>
     </td>
-    <td><input id="urlvideo" value="" /><p>&nbsp;<span style="font-size: x-large;">views</span></p>
+    <td><input class="input" id="urlvideo" value="" /><p style="color: white;font-family: sans-serif;font-weight: 800;">&nbsp;<span style="font-size: large;">views</span></p>
     </td>
   </tr>
   <tr>
     <td>
       
     </td>
-    <td><input id="nbrvideo" value="3" />
+    <td><input class="input" id="nbrvideo" value="3" />
     </td>
   </tr>
   <tr>
-    <td> <button onclick="play();"><p>&nbsp;<span style="font-size: large;">Play</span></p></button>  </td>
+    <td> <button onclick="play();" style="cursor: pointer;"><p>&nbsp;<span style="font-size: large;">PLAY</span></p></button>  </td>
   </tr>
 </table>
+</div>
 
 
 
